@@ -5,6 +5,29 @@
 ![0](https://github.com/produce101levi/Evidence-4/assets/117374505/e1b69511-2af1-4086-8bc3-89f3217250a5)
 
 
+**Time Complexity**
+
+The time complexity for this solution is O(n) in the worst case.
+
+The function for the DFS is recursive. It calls itself over and over again until it reaches the end of the tree, therefore the function runs n times. 
+
+So its complexity is O(n). 
+
+Since the function to determine the winner calls the DFS function as well, this function has a complexity of O(n) as well. 
+
+The complexity for the function that's in charge of printing the tree is O(n). The outer for loop iterates over each node of the tree n times, and for each time the outer loop does this, the inner loop iterates over the neighbors of each node an equal amount of times because it's a for each loop. Therefore, the complexity is O(n).
+
+There are no other components, lines or functions in the code that have an equal or higher complexity than O(n), so the time complexity for this solution is O(n).
+
+**Why is this the best solution?**
+
+A functional programming paradigm is more fitting for this problem because the problem is inherently sequential and it requires a recursive function like depthFirstSearch(). 
+
+In any case, concurrent programming would be used in order to run the print_tree() function and depthFirstSearch() at the same time. Since print_tree() is really an optional function (because it's not a requirement to solve the problem), concurrent programming wouldn't be relevant and therefore not a better option than functional programming.
+
+Other paradigms such as Object-Oriented programming or parallel programming would be more complicated to code and understand. It'd be unnecessary to put an additional amount of effort and understanding into this solution; especially considering the fact that factors such as the time complexity would remain the same.
+
+
 **Tests**
 
 These are the tests that were implemented for the model. 
