@@ -7,6 +7,12 @@
 
 **Tests**
 
+These are the tests that were implemented for the model. 
+
+The first line is the input for the values of n and t. 
+The next n-1 lines are the nodes as they are connected. In the case of test #1, node 2 is connected to node 3 and node 3 is connected to node 1.
+The last line is the starting node.
+
 #1
 
 Input:
