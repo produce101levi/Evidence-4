@@ -92,5 +92,7 @@ Hermione
 **References**
 
 Stungeye. (N.D.). _Arrays_. Retrieved from https://stungeye.github.io/Programming-1-Notes/docs/06-collections/02-arrays.html
+
 GeeksForGeeks. (2024). _Depth First Search or DFS for a Graph_. Retrieved from https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
 GeeksForGeeks. (2022). _Functional Programming Paradigm_. Retrieved from https://www.geeksforgeeks.org/functional-programming-paradigm/
