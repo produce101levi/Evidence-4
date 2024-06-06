@@ -1,32 +1,30 @@
 #include <iostream>
 // As best practice, vectors will be used instead of arrays.
 #include <vector>
+#include <algorithm>
+#include <string>
 
 // Namespace std is also ommitted.
 
 // Function to make the Depth First Search (DFS)
-void depthFirstSearch(const std::vector<std::vector<int>> &tree, int node, int parent, int depth, int &max_depth){
-  max_depth = std::max(max_depth, depth);
+int depthFirstSearch(const std::vector<std::vector<int>> &tree, int node, int parent, int depth){
+  int max_depth = depth;
   for (int neighbor : tree[node]){
     if (neighbor != parent){
-      depthFirstSearch(tree, neighbor, node, depth + 1, max_depth);
+      max_depth = std::max(max_depth, depthFirstSearch(tree, neighbor, node, depth + 1));
     }
-    
+
   }
+  return max_depth;
 }
 
 
 // Function to determine the winner of the game
 std::string determine_winner(int n, int start_node, 
  const std::vector<std::vector<int>> &tree){
-  int max_depth = 0;
-  depthFirstSearch(tree, start_node, -1, 0, max_depth);
+  int max_depth = depthFirstSearch(tree, start_node, -1, 0);
 
-  if (max_depth % 2 == 0){
-    return "Hermione";
-  } else {
-    return "Ron";
-  }
+  return (max_depth % 2 == 0) ? "Hermione" : "Ron";
 
 }
 
@@ -53,14 +51,14 @@ int main(){
   std::vector<std::vector<int>> tree (n + 1);
 
   // For cycle to insert values into tree
-  for (int i = 0;i<n-1;i++){
+  for (int i = 0; i < n - 1; i++){
     int u, v;
 
     std::cin >> u >> v;
 
     tree[u].push_back(v);
     tree[v].push_back(u);
-    
+
   }
 
   // Starting node is declared
@@ -75,5 +73,5 @@ int main(){
 
   // Print result
   std::cout << result;
-  
+
 }
