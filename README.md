@@ -1,5 +1,20 @@
 # Evidence-4
 
+**Context**
+The problem that was chosen for this is the following one:
+
+<img width="790" alt="image" src="https://github.com/produce101levi/Evidence-4/assets/117374505/4875e372-0378-47ba-8112-53c15efff4d1">
+
+This problem can be found in this link: https://codeforces.com/problemset/problem/1970/C1
+
+Basically, what is needed for this problem to be solved is to create a program that, with an input that indicates the number of nodes in the tree, another one that explains how the nodes are connected to each other, and a final one that indicates which node the game begins on, determines the winner of the game. 
+
+The reason this problem is useful to demonstrate a functional paradigm is because it requires working with trees. Which means a solution to this problem would be using a 
+Depth First Search algorithm, which requires functions. 
+
+A Depth First Search algorithm is also recursive, which is a key element in a functional programming paradigm. 
+
+
 **Diagram**
 
 ![0](https://github.com/produce101levi/Evidence-4/assets/117374505/e1b69511-2af1-4086-8bc3-89f3217250a5)
@@ -77,4 +92,5 @@ Hermione
 **References**
 
 Stungeye. (N.D.). _Arrays_. Retrieved from https://stungeye.github.io/Programming-1-Notes/docs/06-collections/02-arrays.html
-GeeksForGeeks. (2024). _Depth First Search or DFS for a Graph_. Retireved from https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+GeeksForGeeks. (2024). _Depth First Search or DFS for a Graph_. Retrieved from https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+GeeksForGeeks. (2022). _Functional Programming Paradigm_. Retrieved from https://www.geeksforgeeks.org/functional-programming-paradigm/
