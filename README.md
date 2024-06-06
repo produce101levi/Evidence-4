@@ -19,7 +19,9 @@ A Depth First Search algorithm is also recursive, which is a key element in a fu
 
 ![0](https://github.com/produce101levi/Evidence-4/assets/117374505/e1b69511-2af1-4086-8bc3-89f3217250a5)
 
-The functional programming paradigm is used because the functions in the program are pure (which means they do not modify external states and depend only on their own local inputs & parameters). The depthFirstSearch() function is also recursive. 
+The functional programming paradigm is used because the functions in the program are recursive and the solution is based on functions. 
+
+While C++ does not suppport pure functions inherently, the program's solution has been thought of in such a way that the least amount of external variables and states possible are modififed. However, because inmutability is not present in the code, we cannot say that the functions are pure.
 
 **Time Complexity**
 
